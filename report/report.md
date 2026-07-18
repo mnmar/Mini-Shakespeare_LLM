@@ -51,10 +51,30 @@
 
 ![Annotated architecture diagram](../diagram/architecture_diagram.png)
 
-The diagram above maps each conceptual block of the microGPT blueprint —
-embeddings, self-attention, multi-head attention, feed-forward layers,
-transformer block, language-model head, training loop, and generation — to
-the exact corresponding lines in our implementation:
+*Figure 1. Andrej Karpathy's microGPT architecture (diagram credit:
+Srinivasan Ragothaman, @rsrini7), annotated with the block-by-block
+specifications used to reverse-engineer `microgpt.py`.*
+
+The table below cross-references each section of the diagram against its
+exact implementation in the original `microgpt.py` gist (full walkthrough
+in `diagram/blueprint_notes.md`):
+
+| Diagram Section | Code Location in `microgpt.py` |
+|---|---|
+| Autograd Engine | The `Value` class — every scalar tracks `data`, `grad`, and parent nodes; `.backward()` applies the chain rule via topological sort. |
+| Input / Tokenization | Character-level tokenizer: `uchars`, BOS token. Example: `[BOS, e, m, m, a, BOS]` → token IDs. |
+| Embeddings | `state_dict['wte']` (token, 27×16) + `state_dict['wpe']` (position, 16×16), summed elementwise. |
+| Normalization | `rmsnorm(x)` — no mean subtraction, no learnable gamma/beta. |
+| Transformer Block | `attn_wq`/`wk`/`wv`/`wo` for 4-head attention (`head_dim=4`); scaled dot-product via a running keys/values cache (causality enforced without an explicit mask); residual add. Then `mlp_fc1` (16→64) → ReLU → `mlp_fc2` (64→16), also wrapped in a residual add. |
+| Output Head | `state_dict['lm_head']`: linear layer mapping 16 → 27 logits. |
+| Prediction | `softmax(logits)` converts raw scores into a probability distribution summing to 1.0. |
+| Training vs. Inference | Training: cross-entropy loss `-log(p_target)` → `loss.backward()` → Adam update. Inference: temperature-scaled softmax sampling, autoregressive, stops when BOS is generated again or `block_size` is reached. |
+
+The same block sequence carries over directly into our own PyTorch
+implementation — embeddings, self-attention, multi-head attention,
+feed-forward layers, transformer block, language-model head, training
+loop, and generation — mapped to the exact corresponding lines in
+`my-transformer/model.py` and `my-transformer/train.py`:
 
 - **Token + positional embeddings** — `GPTLanguageModel.__init__`
   (`self.token_embedding`, `self.position_embedding`, lines 233–237) and

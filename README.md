@@ -11,9 +11,9 @@ Gemini Flash. Full writeup: [`report/report.md`](report/report.md)
 
 The repo is split into five parts:
 
-- `diagram/` — the microGPT blueprint understanding notes and the (pending)
-  hand-annotated architecture diagram — see
-  [`diagram/ARCHITECTURE_DIAGRAM_TODO.md`](diagram/ARCHITECTURE_DIAGRAM_TODO.md).
+- `diagram/` — the microGPT blueprint understanding notes and the annotated
+  architecture diagram — see
+  [`diagram/blueprint_notes.md`](diagram/blueprint_notes.md).
 - `data/` — the data ingestion pipeline (byte tokenizer, load / split / batch).
 - `my-transformer/` — the transformer model, a shape-verification script, and the
   training script for Model A / Model B.
@@ -26,8 +26,9 @@ The repo is split into five parts:
 ```
 .
 ├── diagram/                         # Task 1: blueprint notes + annotated diagram
-│   ├── blueprint_notes.md           # typed notes on how microGPT works
-│   └── ARCHITECTURE_DIAGRAM_TODO.md # flags the hand-annotated diagram image as pending
+│   ├── blueprint_notes.md           # notes on how microGPT works + diagram-to-code mapping
+│   ├── architecture_diagram.png     # annotated microGPT architecture diagram
+│   └── Step1_microGPT_Blueprint.docx # original source document
 ├── data/                            # data pipeline  (byte-level, vocab = 256)
 │   ├── input.txt                    # Tiny Shakespeare corpus (~1.1 MB)
 │   ├── tokenizer.py                 # UTF-8 byte tokenizer (encode / decode)
