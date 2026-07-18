@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/dhassanl/Downloads/Task2_DataTokenization/**)"
+    ]
+  }
+}

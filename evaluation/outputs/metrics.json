@@ -1,0 +1,38 @@
+[
+  {
+    "model": "A",
+    "n_layer": 2,
+    "n_head": 4,
+    "n_embd": 128,
+    "block_size": 64,
+    "vocab_size": 256,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "steps": 3000,
+    "num_params": 436992,
+    "training_time_final_train_loss": 1.6253149509429932,
+    "training_time_final_val_loss": 1.7995917797088623,
+    "training_time_perplexity": 6.0471783795633,
+    "full_pass_val_loss": 1.7951777760799115,
+    "full_pass_perplexity": 6.0205449355528025
+  },
+  {
+    "model": "B",
+    "n_layer": 4,
+    "n_head": 8,
+    "n_embd": 256,
+    "block_size": 128,
+    "vocab_size": 256,
+    "dropout": 0.1,
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "steps": 3000,
+    "num_params": 3254784,
+    "training_time_final_train_loss": 1.2402644157409668,
+    "training_time_final_val_loss": 1.5025352239608765,
+    "training_time_perplexity": 4.493065570749195,
+    "full_pass_val_loss": 1.4982849839223649,
+    "full_pass_perplexity": 4.474009488712769
+  }
+]

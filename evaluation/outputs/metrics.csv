@@ -1,0 +1,3 @@
+model,n_layer,n_head,n_embd,block_size,vocab_size,dropout,batch_size,learning_rate,steps,num_params,training_time_final_train_loss,training_time_final_val_loss,training_time_perplexity,full_pass_val_loss,full_pass_perplexity
+A,2,4,128,64,256,0.1,64,0.0003,3000,436992,1.6253149509429932,1.7995917797088623,6.0471783795633,1.7951777760799115,6.0205449355528025
+B,4,8,256,128,256,0.1,64,0.0003,3000,3254784,1.2402644157409668,1.5025352239608765,4.493065570749195,1.4982849839223649,4.474009488712769

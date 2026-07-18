@@ -1,0 +1,30 @@
+[
+  {
+    "prompt": "To be, or not to ",
+    "model_a_full_text": "To be, or not to plise all that broke,\n'And tpoon we of ot seed thing not do him it our arreater'd the worn;\nAs a this not his thy want for a name outher,\nOr fourfesss",
+    "model_a_completion": "plise all that broke,\n'And tpoon we of ot seed thing not do him it our arreater'd the worn;\nAs a this not his thy want for a name outher,\nOr fourfesss",
+    "model_b_full_text": "To be, or not to deal,\nCome, my lord.\n\nLUCIO:\n\nPOMPEY:\nI gain; strange the king!\n\nLUCIO:\nI prithee,\nMy poor name no fight in him.\n\nMessenger:\nHave I have ansacred her ",
+    "model_b_completion": "deal,\nCome, my lord.\n\nLUCIO:\n\nPOMPEY:\nI gain; strange the king!\n\nLUCIO:\nI prithee,\nMy poor name no fight in him.\n\nMessenger:\nHave I have ansacred her "
+  },
+  {
+    "prompt": "O Romeo, Romeo, wherefore art thou ",
+    "model_a_full_text": "O Romeo, Romeo, wherefore art thou give liffe.\nA ay, is the consice king, by fatst have of slanded a me,\nHere's full my life of sill onst a grace;\nHad is Cillo itson a thy long\nNot pers",
+    "model_a_completion": "give liffe.\nA ay, is the consice king, by fatst have of slanded a me,\nHere's full my life of sill onst a grace;\nHad is Cillo itson a thy long\nNot pers",
+    "model_b_full_text": "O Romeo, Romeo, wherefore art thou would meet\nto bear me  was glad the light a form.\n\nSecond Servingman:\nO peace to have holy life:\nI may live thee it be to uncold. 'tis, there do\nAppie",
+    "model_b_completion": "would meet\nto bear me  was glad the light a form.\n\nSecond Servingman:\nO peace to have holy life:\nI may live thee it be to uncold. 'tis, there do\nAppie"
+  },
+  {
+    "prompt": "Friends, Romans, countrymen, lend me your ",
+    "model_a_full_text": "Friends, Romans, countrymen, lend me your be\nAnd thou crown of thy trum'd, tump too lite furtuerbs in of you calts.\n\nDUKE OF YORK:\nMy his faight fay my his cave die\nto den a your do catced it ",
+    "model_a_completion": "be\nAnd thou crown of thy trum'd, tump too lite furtuerbs in of you calts.\n\nDUKE OF YORK:\nMy his faight fay my his cave die\nto den a your do catced it ",
+    "model_b_full_text": "Friends, Romans, countrymen, lend me your son,\nThat a Richard Juliet will alone.\nShe bRise for sakes for them all as haunt\nSome foulers in dissvant's dead.\n\nQUEEN:\nI could not know, be 'twixt ",
+    "model_b_completion": "son,\nThat a Richard Juliet will alone.\nShe bRise for sakes for them all as haunt\nSome foulers in dissvant's dead.\n\nQUEEN:\nI could not know, be 'twixt "
+  },
+  {
+    "prompt": "Now is the winter of our discontent",
+    "model_a_full_text": "Now is the winter of our discontent all not repurpeaty\nI her to we come armed: 'mine to the rong\nWhen mine their me boldity\nBone wat with grace, to that nevy life the mird,\nFrom onding ",
+    "model_a_completion": " all not repurpeaty\nI her to we come armed: 'mine to the rong\nWhen mine their me boldity\nBone wat with grace, to that nevy life the mird,\nFrom onding ",
+    "model_b_full_text": "Now is the winter of our discontent:\nMore Serving and Somerset Pleaset Prince,\nAnd this name and represent may alone;\nThen Forlorizel.\n\nDUKE VINCENTIO:\nSome straight, Minius, double gen",
+    "model_b_completion": ":\nMore Serving and Somerset Pleaset Prince,\nAnd this name and represent may alone;\nThen Forlorizel.\n\nDUKE VINCENTIO:\nSome straight, Minius, double gen"
+  }
+]
