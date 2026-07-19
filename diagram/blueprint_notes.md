@@ -59,8 +59,10 @@ source code.
 
 ![Annotated architecture diagram](architecture_diagram.png)
 
-*Figure 1. Andrej Karpathy's microGPT Architecture (diagram credit:
-Srinivasan Ragothaman, @rsrini7).*
+*Figure 1. Andrej Karpathy's microGPT Architecture (base diagram credit:
+Srinivasan Ragothaman, @rsrini7), hand-annotated by Mariem Guitouni with
+the exact line numbers in the raw `microgpt.py` gist for each block
+(editable source: `architecture_diagram.svg`).*
 
 ## Core Components (Code Walkthrough)
 

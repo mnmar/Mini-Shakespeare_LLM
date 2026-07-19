@@ -25,9 +25,10 @@ The repo is split into five parts:
 
 ```
 .
-├── diagram/                         # Task 1: blueprint notes + annotated diagram
+├── diagram/                          # Task 1: blueprint notes + annotated diagram
 │   ├── blueprint_notes.md           # notes on how microGPT works + diagram-to-code mapping
-│   ├── architecture_diagram.png     # annotated microGPT architecture diagram
+│   ├── architecture_diagram.png     # hand-annotated microGPT architecture diagram
+│   ├── architecture_diagram.svg     # editable vector source (Excalidraw export)
 │   └── Step1_microGPT_Blueprint.docx # original source document
 ├── data/                            # data pipeline  (byte-level, vocab = 256)
 │   ├── input.txt                    # Tiny Shakespeare corpus (~1.1 MB)

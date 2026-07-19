@@ -16,7 +16,7 @@
 
 - Reviewed the microGPT code and architecture.
 - Identified the embedding, attention, MLP, output head, training, and generation sections.
-- Prepared the required hand-annotated architecture diagram with the corresponding code lines.
+- Prepared the architecture blueprint writeup with a full code walkthrough of `microgpt.py`.
 
 **Ihina Mahajan — Task 2: Dataset and Tokenization**
 
@@ -44,6 +44,7 @@
 - Tested both models using 4 Shakespearean prompts and generated exactly 150 tokens.
 - Got outputs from Gemini Flash using the same prompts and prepared the comparison table.
 - Organized the GitHub repository, requirements file, README, graphs, outputs, and final report.
+- Hand-annotated the architecture diagram with exact line-number mappings into the raw `microgpt.py` gist.
 
 ---
 
@@ -51,13 +52,15 @@
 
 ![Annotated architecture diagram](../diagram/architecture_diagram.png)
 
-*Figure 1. Andrej Karpathy's microGPT architecture (diagram credit:
-Srinivasan Ragothaman, @rsrini7), annotated with the block-by-block
-specifications used to reverse-engineer `microgpt.py`.*
+*Figure 1. Andrej Karpathy's microGPT architecture (base diagram credit:
+Srinivasan Ragothaman, @rsrini7), hand-annotated by Mariem Guitouni with
+the exact line numbers in the raw `microgpt.py` gist for each block
+(editable source: `diagram/architecture_diagram.svg`).*
 
-The table below cross-references each section of the diagram against its
-exact implementation in the original `microgpt.py` gist (full walkthrough
-in `diagram/blueprint_notes.md`):
+The table below transcribes the hand-written line-number annotations from
+the figure above into a readable reference, cross-referencing each section
+of the diagram against its exact implementation in the original
+`microgpt.py` gist (full walkthrough in `diagram/blueprint_notes.md`):
 
 | Diagram Section | Code Location in `microgpt.py` |
 |---|---|
